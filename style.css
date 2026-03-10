@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+ 
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+/* Logo kiri */
+.logo {
+    width: 120px;
+    height: auto;
+    padding-right: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+/* Menu kanan */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  color: #8bb3e8;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.6;
+}
+.hello {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    height: 680px;
+    position: sticky; /* Div 1 akan menempel di atas */
+  top: 0;
+ 
+  
+   
+}
+/* posisi awal (tersembunyi) */
+.img-muncul {
+    width: 750px;
+    height: auto;
+    border-radius: 15px;
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+    animation: timbul 1s ease forwards;
+}
+
+/* animasi muncul */
+@keyframes timbul {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  background: #8CB7EC;
+  min-height: 100vh; /* full layar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 120px;
+  position: relative; /* Div 2 berjalan normal menimpa Div 1 */
+  z-index: 2; /* Memastikan Div 2 berada di lapisan atas */
+  box-shadow: 0 -10px 30px rgba(0,0,0,0.3); /* Opsional: memberi efek bayangan agar terlihat 'menumpuk' */
+}
+
+/* LEFT SIDE */
+.left {
+  width: 50%;
+  color: white;
+}
+
+.left h1 {
+  font-size: 80px; /* gede banget */
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.left p {
+  font-size: 18px;
+  max-width: 450px;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-top: -10%;
+}
+
+/* RIGHT SIDE */
+.right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-frame {
+
+  padding: 20px;
+  width: 380px;
+}
+
+.wrapper {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.typing-text {
+    color: #ffffff;
+    font-size: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid transparent; /* Kursor sembunyi dulu */
+    width: 0; 
+    margin-top: -15%;
+    margin-left: -1%;
+}
+
+/* Class ini akan ditambahkan lewat JavaScript saat scroll sampai */
+.start-typing {
+    border-right: 4px solid #ffffff; /* Kursor muncul */
+    animation: 
+        ketik 3.5s steps(40, end) forwards,
+        kedip .75s step-end infinite;
+}
+
+@keyframes ketik {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes kedip {
+    from, to { border-color: transparent; }
+    50% { border-color: #ffffff; }
+}
+
+.project {
+  background: #B0D1FA;
+  min-height: 100vh; /* full layar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 120px;
+   position: relative; /* Div 2 berjalan normal menimpa Div 1 */
+  z-index: 2; /* Memastikan Div 2 berada di lapisan atas */
+  box-shadow: 0 -10px 30px rgba(0,0,0,0.3); /* Opsional: memberi efek bayangan agar terlihat 'menumpuk' */
+}
+
+
+
+.website-project {
+  font-size: 40px;
+  color: #F5F5F5;
+  font-weight: 700;
+  margin-top: -40%;
+  margin-right: 100%;
+ 
+  
+
+}
+.wrapper {
+  padding-left: 0;
+}
+
+/* FLEX CONTAINER */
+.content {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-start; /* mepet kiri */
+  padding-top: 40px; /* cuma jarak atas */
+  position: relative;
+  left: -115%; /* geser ke kiri */
+ margin-top: -20%;
+}
+
+/* CARD */
+.card {
+  width: 220px;
+}
+
+/* BOX FOTO */
+.box {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* HOVER CUMA BOX */
+.box:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* GAMBAR */
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* TEKS */
+.paragraph {
+  margin-top: 12px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+.tools {
+  background: #ffffff;
+  min-height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   position: relative; /* Div 2 berjalan normal menimpa Div 1 */
+  z-index: 2; /* Memastikan Div 2 berada di lapisan atas */
+  box-shadow: 0 -10px 30px rgba(0,0,0,0.3); /* Opsional: memberi efek bayangan agar terlihat 'menumpuk' */
+  margin-left: auto;
+}
+
+.wrappertools {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.text-tools{
+  font-size: 50px;
+  color: #8CB7EC;
+  font-weight: 700;
+  margin-bottom: 600px;
+  margin-left: auto;
+  margin-right: 50%;
+  margin-bottom: 43%;
+  
+ 
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-right: 200%;
+  
+}
+
+.cards .red {
+  background-color: #F9A280;
+}
+
+.cards .blue {
+  background-color: #ffffff;
+}
+
+.cards .green {
+  background-color: #ffffff;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 150px;
+  width: 450px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards-img {
+  width: auto;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: .7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+} 
+
+
+.contact-me {
+  background: #ffffff;
+  min-height: 50vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   position: relative; /* Div 2 berjalan normal menimpa Div 1 */
+  z-index: 2; /* Memastikan Div 2 berada di lapisan atas */
+  
+}
+.contact {
+  max-width: 1500px;
+  margin: 80px auto;
+  padding: 60px 40px;
+  background: #8CB7EC;
+  border-radius: 12px;
+  width:100%;
+  height: 400px;
+}
+
+.contact-img {
+  width: 130px;
+  height: auto;
+  margin-top: -10%;
+ 
+}
