@@ -1,115 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
     <title>Sakieee</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <nav class="navbar"><img src="/img/Screenshot 2026-02-25 110308.png" alt="logo" class="logo">
-
-        <div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Project</a></li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <img src="img/logo sakiee biru.png" alt="Sakieee Logo" class="logo-img">
+            <button class="hamburger" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#tools" class="nav-link">Tools</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
-
     </nav>
-    <div class="hello">
-        <div class="container">
-            <img src="/img/Screenshot 2026-02-25 113216.png" alt="image" class="img-muncul">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in-up delay-2">Hi, I'm <span class="gradient-text">RAKHA</span></h1>
+            <p class="fade-in-up delay-3">Full Stack Developer & UI/UX Designer</p>
+            <a href="#projects" class="cta-button fade-in-up delay-4">See My Projects</a>
         </div>
+    </section>
 
-    </div>
-    <div class="body">
-        <section class="hero">
-            <div class="left">
-                <h1>
-                    My Name.
-                </h1>
-                <div class="wrapper">
-
-                    <h1 class="typing-text"> Rakha Sakhi</h1>
-                    <script src="script.js"></script>
-                </div>
-
-                <p>
-                    I am a high school student passionate about web development,
-                    skilled in HTML, CSS, and JavaScript.
-                    I enjoy building clean, responsive websites and continuously
-                    improving my skills to grow as a future front-end developer.
-                </p>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="img/Desain tanpa judul.png" alt="Profile Picture" loading="lazy">
             </div>
-
-            <div class="right">
-                <div class="photo-frame">
-                    <img src="/img/Screenshot 2026-02-25 114103.png" alt="Rakha">
-                </div>
+            <div class="about-text">
+                <h3>Hi! I'm RAKHA</h3>
+                <p>I'm a Full Stack Developer with 1+ years of experience building modern, responsive web applications. Passionate about creating user-friendly and scalable digital solutions.</p>
+                <p>I master various frontend and backend technologies and always follow the latest web development trends.</p>
             </div>
-        </section>
-        <div>
-
         </div>
-    </div>
-    <div class="project">
-        <section class="wrapper">
-            <h1 class="website-project">Website Project.</h1>
-            <div class="content">
+    </section>
 
-                <div class="card">
-                    <div class="box">
-                        <img src="/img/Screenshot 2026-01-28 150118.png" alt="box-img">
-                    </div>
-                    <p class="paragraph">Try css</p>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img class="project-image" src="img/Populer.png" alt="Film Web UI Screenshot" />
+                <h3>Film Web UI</h3>
+                <p>Film website with modern and user-friendly design. Using Figma for prototyping and Pinterest for visual inspiration.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Figma</span>
+                    <span class="tech-tag">Pinterest</span>
+                    <span class="tech-tag">UI/UX</span>
                 </div>
-
-                <div class="card">
-                    <div class="box">
-                        <img src="/img/Screenshot 2026-02-25 111243.png" alt="box-img">
-                    </div>
-                    <p class="paragraph">Make Card </p>
-                </div>
-
-            </div>
-
-
-
-        </section>
-    </div>
-
-    <div class="tools">
-        <h1 class="text-tools">Tools</h1>
-        <section class="wrappertools">
-            <div class="cards">
-                <div class="card red">
-                    <img src="/img/Html design.png" alt="card-img">
-
-                </div>
-                <div class="card blue">
-                    <img src="/img/css design.png" alt="">
-
-                </div>
-                <div class="card green">
-                    <img src="/img/js design.png" alt="">
-
+                <div class="project-links">
+                    <a href="#" class="project-link">Live Demo</a>
+                    <a href="#" class="project-link">GitHub</a>
                 </div>
             </div>
-        </section>
-
-    </div>
-    <div class="contact-me">
-            <section class="contact">
-                <img src="/img/Sakiee.png" alt="contact" class="contact-img">
-                
-            </section>
+            <div class="project-card coming-soon">
+                <div class="coming-soon-content">
+                    <h3>Coming Soon</h3>
+                    <p>Exciting projects in development</p>
+                </div>
+            </div>
+            <div class="project-card coming-soon">
+                <div class="coming-soon-content">
+                    <h3>Coming Soon</h3>
+                    <p>Exciting projects in development</p>
+                </div>
+            </div>
         </div>
+    </section>
 
+    <!-- Tools Section -->
+    <section id="tools" class="section">
+        <h2 class="section-title">Tools & Technologies</h2>
+        <div class="tools-grid">
+            <div class="tool-item">
+                <div class="tool-icon">
+                    <i class="fab fa-react"></i>
+                </div>
+                <h4>React</h4>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <h4>Node.js</h4>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h4>MongoDB</h4>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon">
+                    <i class="fab fa-git-alt"></i>
+                </div>
+                <h4>Git</h4>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <h4>JavaScript</h4>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <h4>CSS3</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's Collaborate!</h3>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>argantasakhi2010@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+62 822 4606 7540</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Bogor, Indonesia</span>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-spotify"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
